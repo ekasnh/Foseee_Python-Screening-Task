@@ -1,0 +1,55 @@
+# Python Screening Task 3 — Research Plan
+
+This repository contains the research plan for **Python Screening Task 3: Evaluating Open Source Models for Student Competence Analysis**.
+
+---
+
+## Research Plan
+
+To evaluate open source models for analyzing student competence in Python, I would begin by surveying widely available large language models (LLMs) and educational NLP frameworks such as **OpenAssistant**, **Falcon**, or **LLaMA-based variants** that are freely distributed. My approach is to shortlist models that can parse code, generate natural language feedback, and support fine-tuning or prompt engineering. I would define evaluation criteria along three axes: (1) the model’s ability to analyze Python code for logical correctness and style, (2) the richness of prompts or hints it can generate to probe conceptual understanding (not just syntax errors), and (3) adaptability for educational use cases without requiring excessive resources. To validate applicability, I would test the model against a set of real or simulated student submissions (containing both correct and buggy code) and evaluate whether its responses encourage reasoning and self-discovery rather than revealing direct solutions.
+
+A suitable model for high-level competence analysis should demonstrate **interpretability, diagnostic depth, and adaptability**. It must recognize not only surface-level bugs but also reasoning gaps, such as misunderstandings of recursion or data structures. I would test meaningfulness by designing a rubric: Do the model’s prompts (a) highlight relevant misconceptions, (b) encourage further exploration, and (c) remain free of spoilers? Trade-offs are expected: larger models may provide richer feedback but at the cost of computational resources, while smaller models are cheaper and more interpretable but may lack nuance. For this task, a promising candidate is **CodeT5+** (an open-source code-focused model) due to its strong code-understanding ability and availability. Its strength is in program analysis and explanation, but a limitation is that it was not specifically trained for pedagogy, so fine-tuning or prompt engineering would be needed. This balance of capability, openness, and extensibility makes it a strong baseline to explore for student competence analysis.
+
+---
+
+## Reasoning Answers
+
+**What makes a model suitable for high-level competence analysis?**
+Its ability to go beyond syntax errors and identify reasoning gaps, conceptual misunderstandings, and higher-level problem-solving skills.
+
+**How would you test whether a model generates meaningful prompts?**
+By applying a rubric: whether its prompts (a) highlight misconceptions, (b) invite reflection, and (c) avoid giving away full solutions.
+
+**What trade-offs exist between accuracy, interpretability, and cost?**
+Larger models may offer richer feedback and better accuracy but are resource-heavy. Smaller models are easier to interpret and cheaper but may oversimplify or miss subtle misconceptions.
+
+**Why CodeT5+?**
+It is openly available, optimized for code understanding, and adaptable with prompt engineering or fine-tuning. Its strength is in code analysis and explanation. Limitation: it is not inherently designed for pedagogy, so additional educational framing is required.
+
+---
+
+## References
+
+* [CodeT5+: Open Source Code Intelligence Model](https://github.com/salesforce/CodeT5)
+* [Falcon LLM](https://falconllm.tii.ae/)
+* [OpenAssistant Project](https://open-assistant.io/)
+* [Meta LLaMA Models](https://ai.meta.com/llama/)
+
+---
+
+## Submission Instructions
+
+1. Ensure this repository contains:
+
+   * `RESEARCH_PLAN.md` (this file)
+   * `README.md`
+   * Any additional references or links (if needed)
+
+2. Push this repository to your public GitHub account or share via Google Drive.
+
+3. Email the link to **[pythonsupport@fossee.in](mailto:pythonsupport@fossee.in)** with subject line:
+
+   ```
+   Prompt submission — Ekansh Agarwal
+   ```
+---
